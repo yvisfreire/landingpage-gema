@@ -200,6 +200,7 @@ nav {
 .award-card {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--white);
     border-radius: 25px;

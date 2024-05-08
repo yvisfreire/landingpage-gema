@@ -21,8 +21,23 @@ function set_news(data) {
     }
 }
 
+function set_awards(data) {
+    let cards = document.querySelector('.award-cards').children;
+
+    for (let i = 0; i < cards.length; i++) {
+        cards[i].children[0].src = data.campeonatos[i].imagem;
+
+        cards[i].children[1].children[0].children[1].textContent = data.campeonatos[i].medalhas.ouro.total;
+        cards[i].children[1].children[1].children[1].textContent = data.campeonatos[i].medalhas.prata.total;
+        cards[i].children[1].children[2].children[1].textContent = data.campeonatos[i].medalhas.bronze.total;
+
+        cards[i].children[2].textContent = `${data.campeonatos[i].nomeCompleto} (${data.campeonatos[i].nome})`;  
+    }
+}
+
 loadJSON((res) => {
     let data = JSON.parse(res);
 
     set_news(data);
+    set_awards(data);
 })
