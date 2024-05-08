@@ -25,6 +25,7 @@ body {
 p {
     margin: 0px;
     font-size: 25px;
+    font-weight: 500;
 }
 
 h1 {
@@ -88,6 +89,10 @@ nav {
     flex-grow: 2;
 }
 
+.meet-us-text p {
+    color: var(--text-beige);
+}
+
 .meet-us-btn {
     color: var(--white);
     text-decoration: none;
@@ -134,23 +139,102 @@ nav {
 }
 
 #news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--bg-blue);
+    padding: 30px 0px;
 }
 
 #news h2 {
     color: var(--white);
 }
 
-#news p {
+#news > p {
     color: var(--text-beige-dark);
 }
 
+.news-cards {
+    display: flex;
+    flex-direction: row;
+}
+
+.news-card {
+    background-color: var(--white);
+    border-radius: 25px;
+    margin: 20px 15px;
+    text-align: center;
+    max-width: 300px;
+}
+
+.news-card p {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: var(--text-gray);
+}
+
+.news-card img {
+    max-width: 300px;
+    object-fit: contain;
+}
+
 #awards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--bg-beige);
+    padding: 30px 0px;
 }
 
 #awards p {
     color: var(--text-gray);
+}
+
+.award-cards {
+    display: flex;
+}
+
+.award-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    border-radius: 25px;
+    max-width: 300px;
+    margin: 20px 15px;
+    padding: 20px 0px;
+}
+
+.award-card > img {
+    width: 100px;
+    height: 100px;
+}
+
+.award-card p {
+    text-align: center;
+    font-size: 17px;
+}
+
+.medals {
+    display: flex;
+}
+
+.medal {
+    display: flex;
+    margin: 0px 15px;
+}
+
+.medal img {
+    transform: scale(0.75);
+}
+
+.see-more-btn {
+    color: var(--white);
+    text-decoration: none;
+    background-color: var(--yellow);
+    padding: 5px 75px;
+    margin: 5px 0px;
+    border-radius: 10px;
 }
 
 #contacts {
@@ -158,6 +242,7 @@ nav {
     flex-direction: column;
     align-items: center;
     background-color: var(--bg-blue);
+    padding: 20px 0px;
 }
 
 #contacts h2 {
@@ -171,6 +256,7 @@ nav {
 .socials {
     display: flex;
     align-items: center;
+    transform: scale(0.75);
 }
 
 .socials a {
