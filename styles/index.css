@@ -40,6 +40,11 @@ h2 {
     font-weight: 800;
 }
 
+h3 {
+    margin: 0px;
+    font-size: 24px;
+}
+
 #home {
     color: var(--white);
     background-color: var(--bg-blue);
@@ -283,4 +288,89 @@ footer p {
 footer a {
     color: var(--link-blue);
     text-decoration: none;
+}
+
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 60px;
+    border: 1px solid #888;
+    border-radius: 18px;
+    width: 60%;
+}
+
+#content p {
+    font-size: 20px;
+    text-align: center;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#award-icon {
+    width: 80px;
+    height: 80px;
+}
+
+#award-title {
+    margin-left: 25px;
+}
+
+.close-div {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 18px;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.medal-info img {
+    margin: 0px 5px;
+}
+
+.medal-info {
+    display: flex;
+    margin: 5px 0px;
+}
+
+.medal-info p {
+    min-width: 35px;
+    color: var(--text-gray);
+}
+
+hr {
+    color: var(--text-beige);
+    width: 100%;
 }

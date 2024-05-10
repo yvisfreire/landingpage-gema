@@ -67,58 +67,58 @@
                 <img src="./images/OBI_icon.png" alt="OBI icon">
                 <div class="medals">
                     <div class="medal">
-                        <img src="./images/Gold.svg" alt="Gold medal">
+                        <img src="./images/ouro.svg" alt="Gold medal">
                         <p>10</p>
                     </div>
                     <div class="medal">
-                        <img src="./images/Silver.svg" alt="Silver medal">
+                        <img src="./images/prata.svg" alt="Silver medal">
                         <p>6</p>
                     </div>
                     <div class="medal">
-                        <img src="./images/Bronze.svg" alt="Bronze medal">
+                        <img src="./images/bronze.svg" alt="Bronze medal">
                         <p>4</p>
                     </div>
                 </div>
                 <p>Ollimpíada Brasileira de Informática (OBI)</p>
-                <a href="#0" class="see-more-btn">Ver mais</a>
+                <a href="#0" onclick="open_modal(0)" class="see-more-btn obi-btn">Ver mais</a>
             </div>
             <div class="award-card">
                 <img src="./images/ICPC_icon.png" alt="ICPC icon">
                 <div class="medals">
                     <div class="medal">
-                        <img src="./images/Gold.svg" alt="Gold medal">
+                        <img src="./images/ouro.svg" alt="Gold medal">
                         <p>10</p>
                     </div>
                     <div class="medal">
-                        <img src="./images/Silver.svg" alt="Silver medal">
+                        <img src="./images/prata.svg" alt="Silver medal">
                         <p>6</p>
                     </div>
                     <div class="medal">
-                        <img src="./images/Bronze.svg" alt="Bronze medal">
+                        <img src="./images/bronze.svg" alt="Bronze medal">
                         <p>4</p>
                     </div>
                 </div>
                 <p>International Collegiate Programming Contest (ICPC)</p>
-                <a href="#0" class="see-more-btn">Ver mais</a>
+                <a href="#0" onclick="open_modal(1)" class="see-more-btn icpc-btn">Ver mais</a>
             </div>
             <div class="award-card">
                 <img src="./images/MEP_icon.png" alt="MEP icon">
                 <div class="medals">
                     <div class="medal">
-                        <img src="./images/Gold.svg" alt="Gold medal">
+                        <img src="./images/ouro.svg" alt="Gold medal">
                         <p>10</p>
                     </div>
                     <div class="medal">
-                        <img src="./images/Silver.svg" alt="Silver medal">
+                        <img src="./images/prata.svg" alt="Silver medal">
                         <p>6</p>
                     </div>
                     <div class="medal">
-                        <img src="./images/Bronze.svg" alt="Bronze medal">
+                        <img src="./images/bronze.svg" alt="Bronze medal">
                         <p>4</p>
                     </div>
                 </div>
                 <p>Maratona Feminina de Programção (MFP)</p>
-                <a href="#0" class="see-more-btn">Ver mais</a>
+                <a href="#0" onclick="open_modal(2)" class="see-more-btn mfp-btn">Ver mais</a>
             </div>
         </div>
     </div>
@@ -135,5 +135,18 @@
         <p>Gema - ICMC USP 2024</p>
         <p>Desenvolvido pelo <a href="#">Codelab</a></p>
     </footer>
+    <div id="modal">
+        <div id="content">
+            <div class="close-div">
+                <span class="close" onclick="close_modal()">&times;</span>
+            </div>
+            <div class="content-header">
+                <img src="" alt="Award icon" id="award-icon">
+                <h3 id="award-title"></h3>
+            </div>
+            <div id="awards-per-year">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
